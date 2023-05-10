@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Vaildate</title>/
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            height: 550px;
+            align-items: center;
+        }
+        .form {
+            width: 300px;
+            border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .form-group {
+            padding: 8px;
+            margin: 4px auto;
+
+        }
+        .form-group label {
+            display: flex;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 4px;
+        }
+        .form-control {
+            border: 1px solid gray;
+            outline: none;
+        }
+        button {
+            padding: 4px;
+            margin-top: 4px;
+        }
+        .form-error {
+            font-size: 14px;
+            color: red;
+        }
+        .errorMessage___error,
+        .errorMessage___error:focus {
+            border-color: red;
+            
+        }
+    </style>
+</head>
+<body>
+    <form id="form-1" method="POST" class="form">
+        <h2>Information form</h2>
+        <!-- Viết hàm kiểm tra giá trị nhập vào chỉ chứa ký tự chữ -->
+        <div class="form-group">
+        <label for="valiName" class="form--label">Tên Đăng nhập: </label>
+        <input type="text" name="valiName" id="name" placeholder="nhập tên đăng nhập" class="form-control">
+        <span class="errorMessage form-error"></span>
+        </div>
+        <!-- Viết hàm kiểm tra định dạng một số điện thoại   -->
+        <div class="form-group">
+        <label for="valiPhone" class="form--label">Phone: </label>
+        <input type="tel" name="valiPhone" id="phone" placeholder="nhập số diện thoại" class="form-control">
+        <span class="errorMessage form-error"></span>
+        </div>
+        <!-- Viết hàm kiểm tra email -->
+        <div class="form-group">
+        <label for="valiEmail" class="form--label">Email: </label>
+        <input type="email" name="valiEmail" id="email" placeholder="nhập email" class="form-control">
+        <span class="errorMessage form-error"></span>
+        </div>
+        <!-- Viết hàm kiểm tra giá trị nhập vào chỉ chứa ký tự số -->
+        <div class="form-group">
+        <label for="valiPassword" class="form--label">Mật Khẩu: </label>
+        <input type="password" name="valiPassword" id="password" placeholder="nhập mật khẩu" class="form-control">
+        <span class="errorMessage form-error"></span>
+        </div>
+        <div class="form-group">
+            <label for="rePassword" class="form--label">Nhập Lại Mật khẩu: </label>
+            <input type="password" name="rePassword" id="repassword" placeholder="nhập lại mật khẩu" class="form-control">
+            <span class="errorMessage form-error"></span>
+            </div>
+        <button type="submit" id="form-submit">Đăng ký</button>
+    </form>
+    <script src="form.js" type="module"></script>
+</body>
+</html>

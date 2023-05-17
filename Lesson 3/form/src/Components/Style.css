@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-group {
+  border: 1px solid #ccc;
+  padding: 30px;
+  background-color: lightblue;
+}
+.form__input {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+.form__control {
+  padding: 8px;
+}
+.form__label {
+  margin-bottom: 2px;
+}
+.form__radio {
+  display: flex;
+}
+.form__select {
+  margin: 10px 0;
+}
+.form__radio--label {
+  padding-left: 4px;
+}
+.form__button {
+  width: 100%;
+  background-color: lightgreen;
+  padding: 8px;
+  margin-top: 10px;
+}

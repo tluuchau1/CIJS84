@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container-title {
+  text-align: center;
+}
+.box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.box-container {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.box-top {
+  border-radius: 100px;
+  box-shadow: 0 4px 24px 0 rgba(103, 151, 255, 0.1),
+    0 12px 64px 0 rgba(103, 151, 255, 0.1);
+  padding: 24px;
+}
+.box-title {
+  color: #20292f;
+  font-weight: 700;
+  text-align: center;
+}
+.box-decription {
+  color: #6d7c90;
+  text-align: center;
+}

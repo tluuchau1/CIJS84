@@ -1,10 +1,11 @@
-import CountNumber from "./Components";
-import TrafficLight from "./Components/TrafficLight.jsx";
+
+import Lesson5 from "./Components/Lesson 5/Homework/countNumber.jsx";
+
 
 
 function App() {
-  return (
-   <TrafficLight />
+  return (  
+  <Lesson5 />
   );
 }
 

@@ -3,27 +3,26 @@ import useHook from "./useHook.jsx";
 
 
 
-const CountNumber = ({defaultValue}) => {
+const CountNumber = () => {
 
-   
-
-
-  const {truxuong1, tangLen1, number} = useHook()
+  const {actAdd, actRemove, number} = useHook()
   
   return (
     <div className="container" style={{display: "flex", flexDirection: "column", alignItems: "center",}}>
       <label className="label">{number}</label>
       <div style={{display: "inline-block"}}>
         <button 
-        onClick={truxuong1}
+        onClick={actRemove}
         className="btn"
         >-
         </button>
+
         <button 
-          onClick={tangLen1}
+          onClick={actAdd}
         className="btn">+
         </button>
       </div>
+
     </div>
   );
 };
